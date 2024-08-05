@@ -6,20 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Tongue Twisters Generator</title>
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 </head>
 
 <body>
     <div class="container">
         <h1>Welcome to the Tongue Twisters Generator</h1>
         <div class="form">
-            <form>
-                <input type="text" placeholder="Enter a topic" autofocus required autocomplete="off" class="placeholder">
+            <form id="generator-form">
+                <input type="text" placeholder="Enter a topic" autofocus required autocomplete="off"
+                    class="placeholder">
                 <input type="submit" class="submit-button" value="Send">
             </form>
         </div>
         <div>
             <h4>Tongue Twister</h4>
-            <p>She sells seashells by the seashore</p>
+            <p id="tongue-twister">She sells seashells by the seashore</p>
         </div>
         <footer>This project was coded by <a href="https://github.com/AlejandraVe" target="_blank">Alejandra Vera</a>,
             is open-sourced on <a href="https://github.com/AlejandraVe/english_tongue_twisters"
