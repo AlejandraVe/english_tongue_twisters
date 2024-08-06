@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Tongue Twisters Generator</title>
+    <title>AI Poems Generator</title>
     <link rel="stylesheet" href="src/style.css">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
@@ -12,15 +12,17 @@
 
 <body>
     <div class="container">
-        <h1>Welcome to the Tongue Twisters Generator</h1>
+        <h1>Welcome to the Poem Generator</h1>
         <div class="form">
             <form id="generator-form">
-                <input type="submit" class="submit-button" value="Give me a tongue twister">
+                <input type="text" class="placeholder" placeholder="Enter a topic for a poem" autofocus required autocomplete="off" id="user-instructions">
+                <input type="submit" class="submit-button" value="Submit">
             </form>
+            <div class="hint">i.e: Flower, Moon or Love</div>
         </div>
-        <div>
-            <h4>Tongue Twister</h4>
-            <p id="tongue-twister">She sells seashells by the seashore</p>
+        <div class="hidden" id="poem-element">
+            <h4>Poem</h4>
+            <p id="poem"></p>
         </div>
         <footer>This project was coded by <a href="https://github.com/AlejandraVe" target="_blank">Alejandra Vera</a>,
             is open-sourced on <a href="https://github.com/AlejandraVe/english_tongue_twisters"
